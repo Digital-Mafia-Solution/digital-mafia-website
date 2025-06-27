@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Target, Eye, Heart } from "lucide-react";
@@ -83,6 +84,8 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
