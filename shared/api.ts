@@ -10,3 +10,6 @@
 export interface DemoResponse {
   message: string;
 }
+
+// Re-export all types from the main types file
+export * from "./types";
