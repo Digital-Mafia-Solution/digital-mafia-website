@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { ArrowRight, Lightbulb, Palette, RefreshCw, Users } from "lucide-react";
 
 export default function Index() {
@@ -250,6 +251,8 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }
