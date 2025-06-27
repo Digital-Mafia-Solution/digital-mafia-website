@@ -1,4 +1,5 @@
 {
+  "homepage": "https://digital-mafia-solution.github.io/digital-mafia-website/",
   "name": "fusion-starter",
   "private": true,
   "type": "module",
@@ -12,9 +13,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:client && npm run build:server",
-    "build:client": "vite build",
-    "build:server": "vite build --config vite.config.server.ts",
+    "deploy": "node deploy.js",
+    "build": "vite build",
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",
     "format.fix": "prettier --write .",

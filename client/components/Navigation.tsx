@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import profileDark from "@/assets/profile-dark.png";
 import { cn } from "@/lib/utils";
 
 export default function Navigation() {
@@ -21,11 +22,11 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-              <span className="text-primary-foreground font-bold text-lg">
-                D
-              </span>
-            </div>
+            <img
+              src={profileDark}
+              alt="Logo"
+              className="w-8 h-8 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300"
+            />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground">
                 Digital Mafia

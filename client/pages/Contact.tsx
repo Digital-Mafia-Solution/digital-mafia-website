@@ -5,28 +5,38 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Github,
+  Send,
+} from "lucide-react";
 
 export default function Contact() {
   const contactInfo = [
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      info: "hello@digitalmafia.solutions",
-      link: "mailto:hello@digitalmafia.solutions",
+      info: "contact@digital-mafia.co.za",
+      link: "mailto:contact@digital-mafia.co.za",
     },
-    {
-      icon: <Phone className="w-6 h-6" />,
-      title: "Phone",
-      info: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
-    },
-    {
-      icon: <MapPin className="w-6 h-6" />,
-      title: "Location",
-      info: "San Francisco, CA",
-      link: "#",
-    },
+    // {
+    //   icon: <Phone className="w-6 h-6" />,
+    //   title: "Phone",
+    //   info: "+1 (555) 123-4567",
+    //   link: "tel:+15551234567",
+    // },
+    // {
+    //   icon: <MapPin className="w-6 h-6" />,
+    //   title: "Location",
+    //   info: "Pretoria, GP",
+    //   link: "#",
+    // },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Response Time",
@@ -183,18 +193,34 @@ export default function Contact() {
                 <h3 className="text-xl font-bold mb-4">Follow the Movement</h3>
                 <div className="flex space-x-4">
                   {[
-                    { name: "LinkedIn", url: "#" },
-                    { name: "Twitter", url: "#" },
-                    { name: "Instagram", url: "#" },
-                    { name: "Dribbble", url: "#" },
+                    {
+                      icon: <Twitter className="w-5 h-5" />,
+                      href: "#",
+                      label: "Twitter",
+                    },
+                    {
+                      icon: <Linkedin className="w-5 h-5" />,
+                      href: "#",
+                      label: "LinkedIn",
+                    },
+                    {
+                      icon: <Instagram className="w-5 h-5" />,
+                      href: "#",
+                      label: "Instagram",
+                    },
+                    {
+                      icon: <Github className="w-5 h-5" />,
+                      href: "#",
+                      label: "Github",
+                    },
                   ].map((social) => (
                     <a
-                      key={social.name}
-                      href={social.url}
+                      key={social.label}
+                      href={social.href}
                       className="w-12 h-12 bg-muted hover:bg-primary hover:text-primary-foreground rounded-xl flex items-center justify-center transition-colors"
                     >
-                      <span className="sr-only">{social.name}</span>
-                      <div className="w-5 h-5 bg-current"></div>
+                      <span className="sr-only">{social.label}</span>
+                      {social.icon}
                     </a>
                   ))}
                 </div>

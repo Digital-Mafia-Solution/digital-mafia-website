@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-
+import profileDark from "@/assets/profile-dark.png";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -47,11 +47,16 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <img
+                src={profileDark}
+                alt="Logo"
+                className="w-8 h-8 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300"
+              />
+              {/* <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-xl">
                   D
                 </span>
-              </div>
+              </div> */}
               <div className="flex flex-col">
                 <span className="text-xl font-bold text-foreground">
                   Digital Mafia
@@ -68,15 +73,15 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>hello@digitalmafia.solutions</span>
+                <span>contact@digital-mafia.co.za</span>
               </div>
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>N/A</span>
               </div>
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span>San Francisco, CA</span>
+                <span>Pretoria, GP</span>
               </div>
             </div>
           </div>
