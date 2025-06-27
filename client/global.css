@@ -17,84 +17,84 @@
 
   /* Digital Mafia Solutions - Logo Colors Theme */
 
-  /* Logo Brand Colors */
-  --color-brand-green: 112 100% 62%; /* #83FF41 */
-  --color-brand-dark: 120 100% 3%; /* #011000 */
-  --color-brand-light: 140 100% 95%; /* #ECFFEF */
+  /* Brand Colors */
+  --color-brand-green: #83ff41;
+  --color-brand-dark: #011000;
+  --color-brand-light: #ecffef;
 
-  /* Dark Theme (Default) */
-  --color-background: 120 100% 3%; /* #011000 - brand dark */
-  --color-foreground: 140 100% 95%; /* #ECFFEF - brand light */
+  /* Dark Theme Colors (Default) */
+  --color-background: #011000;
+  --color-foreground: #ecffef;
 
-  --color-card: 120 50% 5%;
-  --color-card-foreground: 140 100% 95%;
+  --color-card: #051a05;
+  --color-card-foreground: #ecffef;
 
-  --color-popover: 120 50% 5%;
-  --color-popover-foreground: 140 100% 95%;
+  --color-popover: #051a05;
+  --color-popover-foreground: #ecffef;
 
-  --color-primary: 112 100% 62%; /* #83FF41 - brand green */
-  --color-primary-foreground: 120 100% 3%;
+  --color-primary: #83ff41;
+  --color-primary-foreground: #011000;
 
-  --color-secondary: 120 30% 8%;
-  --color-secondary-foreground: 140 100% 95%;
+  --color-secondary: #0a1f0a;
+  --color-secondary-foreground: #ecffef;
 
-  --color-muted: 120 30% 8%;
-  --color-muted-foreground: 140 20% 65%;
+  --color-muted: #0a1f0a;
+  --color-muted-foreground: #a3b8a6;
 
-  --color-accent: 112 100% 62%;
-  --color-accent-foreground: 120 100% 3%;
+  --color-accent: #83ff41;
+  --color-accent-foreground: #011000;
 
-  --color-destructive: 0 84.2% 60.2%;
-  --color-destructive-foreground: 140 100% 95%;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ecffef;
 
-  --color-border: 120 20% 15%;
-  --color-input: 120 30% 8%;
-  --color-ring: 112 100% 62%;
+  --color-border: #1f3a1f;
+  --color-input: #0a1f0a;
+  --color-ring: #83ff41;
 
-  --color-sidebar-background: 120 50% 5%;
-  --color-sidebar-foreground: 140 100% 95%;
-  --color-sidebar-accent: 120 30% 8%;
-  --color-sidebar-accent-foreground: 140 100% 95%;
-  --color-sidebar-border: 120 20% 15%;
-  --color-sidebar-ring: 112 100% 62%;
+  --color-sidebar-background: #051a05;
+  --color-sidebar-foreground: #ecffef;
+  --color-sidebar-accent: #0a1f0a;
+  --color-sidebar-accent-foreground: #ecffef;
+  --color-sidebar-border: #1f3a1f;
+  --color-sidebar-ring: #83ff41;
 }
 
-/* Light Theme */
+/* Light Theme Override */
 .light {
-  --color-background: 140 100% 95%; /* #ECFFEF - brand light */
-  --color-foreground: 120 100% 3%; /* #011000 - brand dark */
+  --color-background: #ecffef;
+  --color-foreground: #011000;
 
-  --color-card: 140 50% 98%;
-  --color-card-foreground: 120 100% 3%;
+  --color-card: #f8fef8;
+  --color-card-foreground: #011000;
 
-  --color-popover: 140 50% 98%;
-  --color-popover-foreground: 120 100% 3%;
+  --color-popover: #f8fef8;
+  --color-popover-foreground: #011000;
 
-  --color-primary: 112 100% 62%; /* #83FF41 - brand green */
-  --color-primary-foreground: 120 100% 3%;
+  --color-primary: #83ff41;
+  --color-primary-foreground: #011000;
 
-  --color-secondary: 140 30% 90%;
-  --color-secondary-foreground: 120 100% 3%;
+  --color-secondary: #e0f2e0;
+  --color-secondary-foreground: #011000;
 
-  --color-muted: 140 30% 90%;
-  --color-muted-foreground: 120 20% 35%;
+  --color-muted: #e0f2e0;
+  --color-muted-foreground: #2d572d;
 
-  --color-accent: 112 80% 45%;
-  --color-accent-foreground: 140 100% 95%;
+  --color-accent: #6bc936;
+  --color-accent-foreground: #ecffef;
 
-  --color-destructive: 0 84.2% 60.2%;
-  --color-destructive-foreground: 140 100% 95%;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ecffef;
 
-  --color-border: 140 20% 85%;
-  --color-input: 140 30% 90%;
-  --color-ring: 112 100% 62%;
+  --color-border: #c7e8c7;
+  --color-input: #e0f2e0;
+  --color-ring: #83ff41;
 
-  --color-sidebar-background: 140 50% 98%;
-  --color-sidebar-foreground: 120 100% 3%;
-  --color-sidebar-accent: 140 30% 90%;
-  --color-sidebar-accent-foreground: 120 100% 3%;
-  --color-sidebar-border: 140 20% 85%;
-  --color-sidebar-ring: 112 100% 62%;
+  --color-sidebar-background: #f8fef8;
+  --color-sidebar-foreground: #011000;
+  --color-sidebar-accent: #e0f2e0;
+  --color-sidebar-accent-foreground: #011000;
+  --color-sidebar-border: #c7e8c7;
+  --color-sidebar-ring: #83ff41;
 }
 
 @utility container {
