@@ -15,48 +15,86 @@
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
 
-  /* Digital Mafia Solutions - Bold Creative Agency Theme */
+  /* Digital Mafia Solutions - Logo Colors Theme */
 
-  /* Brand Colors */
-  --color-neon: 118 100% 50%;
-  --color-electric: 248 95% 70%;
-  --color-cyber: 180 100% 45%;
+  /* Logo Brand Colors */
+  --color-brand-green: 112 100% 62%; /* #83FF41 */
+  --color-brand-dark: 120 100% 3%; /* #011000 */
+  --color-brand-light: 140 100% 95%; /* #ECFFEF */
 
-  /* Dark Theme Base */
-  --color-background: hsl(220 13% 9%);
-  --color-foreground: hsl(0 0% 98%);
+  /* Dark Theme (Default) */
+  --color-background: 120 100% 3%; /* #011000 - brand dark */
+  --color-foreground: 140 100% 95%; /* #ECFFEF - brand light */
 
-  --color-card: hsl(220 13% 12%);
-  --color-card-foreground: hsl(0 0% 98%);
+  --color-card: 120 50% 5%;
+  --color-card-foreground: 140 100% 95%;
 
-  --color-popover: hsl(220 13% 12%);
-  --color-popover-foreground: hsl(0 0% 98%);
+  --color-popover: 120 50% 5%;
+  --color-popover-foreground: 140 100% 95%;
 
-  --color-primary: hsl(118 100% 50%);
-  --color-primary-foreground: hsl(220 13% 9%);
+  --color-primary: 112 100% 62%; /* #83FF41 - brand green */
+  --color-primary-foreground: 120 100% 3%;
 
-  --color-secondary: hsl(220 13% 15%);
-  --color-secondary-foreground: hsl(0 0% 98%);
+  --color-secondary: 120 30% 8%;
+  --color-secondary-foreground: 140 100% 95%;
 
-  --color-muted: hsl(220 13% 15%);
-  --color-muted-foreground: hsl(220 9% 55%);
+  --color-muted: 120 30% 8%;
+  --color-muted-foreground: 140 20% 65%;
 
-  --color-accent: hsl(248 95% 70%);
-  --color-accent-foreground: hsl(220 13% 9%);
+  --color-accent: 112 100% 62%;
+  --color-accent-foreground: 120 100% 3%;
 
-  --color-destructive: hsl(0 84.2% 60.2%);
-  --color-destructive-foreground: hsl(210 40% 98%);
+  --color-destructive: 0 84.2% 60.2%;
+  --color-destructive-foreground: 140 100% 95%;
 
-  --color-border: hsl(220 13% 20%);
-  --color-input: hsl(220 13% 15%);
-  --color-ring: hsl(118 100% 50%);
+  --color-border: 120 20% 15%;
+  --color-input: 120 30% 8%;
+  --color-ring: 112 100% 62%;
 
-  --color-sidebar-background: hsl(220 13% 12%);
-  --color-sidebar-foreground: hsl(0 0% 98%);
-  --color-sidebar-accent: hsl(220 13% 15%);
-  --color-sidebar-accent-foreground: hsl(0 0% 98%);
-  --color-sidebar-border: hsl(220 13% 20%);
-  --color-sidebar-ring: hsl(118 100% 50%);
+  --color-sidebar-background: 120 50% 5%;
+  --color-sidebar-foreground: 140 100% 95%;
+  --color-sidebar-accent: 120 30% 8%;
+  --color-sidebar-accent-foreground: 140 100% 95%;
+  --color-sidebar-border: 120 20% 15%;
+  --color-sidebar-ring: 112 100% 62%;
+}
+
+/* Light Theme */
+.light {
+  --color-background: 140 100% 95%; /* #ECFFEF - brand light */
+  --color-foreground: 120 100% 3%; /* #011000 - brand dark */
+
+  --color-card: 140 50% 98%;
+  --color-card-foreground: 120 100% 3%;
+
+  --color-popover: 140 50% 98%;
+  --color-popover-foreground: 120 100% 3%;
+
+  --color-primary: 112 100% 62%; /* #83FF41 - brand green */
+  --color-primary-foreground: 120 100% 3%;
+
+  --color-secondary: 140 30% 90%;
+  --color-secondary-foreground: 120 100% 3%;
+
+  --color-muted: 140 30% 90%;
+  --color-muted-foreground: 120 20% 35%;
+
+  --color-accent: 112 80% 45%;
+  --color-accent-foreground: 140 100% 95%;
+
+  --color-destructive: 0 84.2% 60.2%;
+  --color-destructive-foreground: 140 100% 95%;
+
+  --color-border: 140 20% 85%;
+  --color-input: 140 30% 90%;
+  --color-ring: 112 100% 62%;
+
+  --color-sidebar-background: 140 50% 98%;
+  --color-sidebar-foreground: 120 100% 3%;
+  --color-sidebar-accent: 140 30% 90%;
+  --color-sidebar-accent-foreground: 120 100% 3%;
+  --color-sidebar-border: 140 20% 85%;
+  --color-sidebar-ring: 112 100% 62%;
 }
 
 @utility container {
