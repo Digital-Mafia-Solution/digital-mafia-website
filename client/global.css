@@ -69,3 +69,72 @@
     max-width: 1400px;
   }
 }
+
+/* Digital Mafia Solutions Custom Animations */
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(118, 255, 128, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(118, 255, 128, 0.6);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Custom Utility Classes */
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background: linear-gradient(-45deg, #76ff80, #8b5cf6, #06b6d4, #10b981);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* Smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--color-background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--color-primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--color-primary) / 0.8);
+}
